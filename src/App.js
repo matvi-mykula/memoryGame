@@ -1,7 +1,6 @@
-import logo from "./logo.svg";
 import "./App.css";
 import React, { useState } from "react";
-import { MakeTiles, displayRandomOrder } from "./Components/tiles.js";
+import { MakeTiles } from "./Components/tiles.js";
 
 function App() {
   const [score, setScore] = useState(0);
@@ -27,12 +26,6 @@ function App() {
         highScore={highScore}
         setHighScore={setHighScore}
       ></MakeTiles>
-      {/* <Tiles
-        score={score}
-        setScore={setScore}
-        highScore={highScore}
-        setHighScore={setHighScore}
-      ></Tiles> */}
     </div>
   );
 }

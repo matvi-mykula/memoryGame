@@ -7,20 +7,20 @@ import loverRacoon from "/Users/matvimykula/Documents/Projects/ODIN Project/memo
 import streetwearRacoon from "/Users/matvimykula/Documents/Projects/ODIN Project/memorygame/src/icons/streetwear.jpeg";
 
 function MakeTiles(props) {
-  console.log(props);
-  const imgList = [
-    scienceRacoon,
-    cookieRacoon,
-    dancingRacoon,
-    appleRacoon,
-    loverRacoon,
-    streetwearRacoon,
-  ];
-  const shuffledTiles = shuffle(imgList);
+  const imgDict = {
+    [scienceRacoon]: 0,
+    [cookieRacoon]: 1,
+    [dancingRacoon]: 2,
+    [appleRacoon]: 3,
+    [loverRacoon]: 4,
+    [streetwearRacoon]: 5,
+  };
+
+  const shuffledTiles = shuffle(Object.keys(imgDict));
 
   const tiles = [];
   const initialTrack = [];
-  for (let i = 0; i < shuffledTiles.length; i++) {
+  for (let i = 0; i < Object.keys(imgDict).length; i++) {
     initialTrack.push(false);
   }
 
@@ -31,18 +31,19 @@ function MakeTiles(props) {
       <img
         src={shuffledTiles[i]}
         alt=""
+        id={shuffledTiles[i]}
         className="image"
         onClick={() => {
-          if (!clickedTracker[i]) {
+          if (!clickedTracker[imgDict[shuffledTiles[i]]]) {
             let newTracker = clickedTracker;
-            newTracker[i] = true;
+
+            newTracker[imgDict[shuffledTiles[i]]] = true;
+            console.log({ newTracker });
             setClickedTracker(newTracker);
             props.setScore(props.score + 1);
             if (props.score > props.highscore) {
               props.setHighScore(props.score);
             }
-
-            console.log(clickedTracker);
           } else {
             props.setScore(0);
             setClickedTracker(initialTrack);
@@ -54,7 +55,8 @@ function MakeTiles(props) {
   return <div className="images">{tiles}</div>;
 }
 
-function shuffle(array) {
+function shuffle(oldArray) {
+  let array = oldArray;
   let currentIndex = array.length,
     randomIndex;
 

@@ -25,6 +25,8 @@
 }
 .App-header > * {
   margin: 50px;
+  padding-bottom: 10px;
+  padding-top: 5px;
 }
 
 img {
