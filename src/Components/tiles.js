@@ -15,6 +15,7 @@ function MakeTiles(props) {
     [loverRacoon]: 4,
     [streetwearRacoon]: 5,
   };
+  // top possible score condition
 
   const shuffledTiles = shuffle(Object.keys(imgDict));
 
@@ -51,6 +52,9 @@ function MakeTiles(props) {
         }}
       />
     );
+  }
+  if (props.highscore === Object.keys(imgDict).length) {
+    return <p>That is the Top Possible Score! Congrats!</p>;
   }
   return <div className="images">{tiles}</div>;
 }
