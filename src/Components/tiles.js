@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import scienceRacoon from "/Users/matvimykula/Documents/Projects/ODIN Project/memorygame/src/scientist.jpeg";
-import cookieRacoon from "/Users/matvimykula/Documents/Projects/ODIN Project/memorygame/src/eatingCookie.jpeg";
-import dancingRacoon from "/Users/matvimykula/Documents/Projects/ODIN Project/memorygame/src/dancingRacoon.jpeg";
-import appleRacoon from "/Users/matvimykula/Documents/Projects/ODIN Project/memorygame/src/eatingApple.jpeg";
-import loverRacoon from "/Users/matvimykula/Documents/Projects/ODIN Project/memorygame/src/lover.jpeg";
-import streetwearRacoon from "/Users/matvimykula/Documents/Projects/ODIN Project/memorygame/src/streetwear.jpeg";
+import scienceRacoon from "src/scientist.jpeg";
+import cookieRacoon from "src/eatingCookie.jpeg";
+import dancingRacoon from "src/dancingRacoon.jpeg";
+import appleRacoon from "src/eatingApple.jpeg";
+import loverRacoon from "src/lover.jpeg";
+import streetwearRacoon from "src/streetwear.jpeg";
 
 function MakeTiles(props) {
   const imgDict = {
