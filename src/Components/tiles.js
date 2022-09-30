@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import scienceRacoon from "src/scientist.jpeg";
-import cookieRacoon from "src/eatingCookie.jpeg";
-import dancingRacoon from "src/dancingRacoon.jpeg";
-import appleRacoon from "src/eatingApple.jpeg";
-import loverRacoon from "src/lover.jpeg";
-import streetwearRacoon from "src/streetwear.jpeg";
+import scienceRacoon from "../scientist.jpeg";
+import cookieRacoon from "../eatingCookie.jpeg";
+import dancingRacoon from "../dancingRacoon.jpeg";
+import appleRacoon from "../eatingApple.jpeg";
+import loverRacoon from "../lover.jpeg";
+import streetwearRacoon from "../streetwear.jpeg";
 
 function MakeTiles(props) {
   const imgDict = {
