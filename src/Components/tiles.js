@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import scienceRacoon from "/Users/matvimykula/Documents/Projects/ODIN Project/memorygame/src/icons/scientist.jpeg";
-import cookieRacoon from "/Users/matvimykula/Documents/Projects/ODIN Project/memorygame/src/icons/eatingCookie.jpeg";
-import dancingRacoon from "/Users/matvimykula/Documents/Projects/ODIN Project/memorygame/src/icons/dancingRacoon.jpeg";
-import appleRacoon from "/Users/matvimykula/Documents/Projects/ODIN Project/memorygame/src/icons/eatingApple.jpeg";
-import loverRacoon from "/Users/matvimykula/Documents/Projects/ODIN Project/memorygame/src/icons/lover.jpeg";
-import streetwearRacoon from "/Users/matvimykula/Documents/Projects/ODIN Project/memorygame/src/icons/streetwear.jpeg";
+import scienceRacoon from "/Users/matvimykula/Documents/Projects/ODIN Project/memorygame/src/scientist.jpeg";
+import cookieRacoon from "/Users/matvimykula/Documents/Projects/ODIN Project/memorygame/src/eatingCookie.jpeg";
+import dancingRacoon from "/Users/matvimykula/Documents/Projects/ODIN Project/memorygame/src/dancingRacoon.jpeg";
+import appleRacoon from "/Users/matvimykula/Documents/Projects/ODIN Project/memorygame/src/eatingApple.jpeg";
+import loverRacoon from "/Users/matvimykula/Documents/Projects/ODIN Project/memorygame/src/lover.jpeg";
+import streetwearRacoon from "/Users/matvimykula/Documents/Projects/ODIN Project/memorygame/src/streetwear.jpeg";
 
 function MakeTiles(props) {
   const imgDict = {
