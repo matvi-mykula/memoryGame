@@ -3,16 +3,16 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-const NodePolyfillPlugin = require("node-polyfill-webpack-plugin");
+// const NodePolyfillPlugin = require("node-polyfill-webpack-plugin");
 
-module.exports = {
-  // Other rules...
-  plugins: [
-    new NodePolyfillPlugin({
-      excludeAliases: ["console"],
-    }),
-  ],
-};
+// module.exports = {
+//   // Other rules...
+//   plugins: [
+//     new NodePolyfillPlugin({
+//       excludeAliases: ["console"],
+//     }),
+//   ],
+// };
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
