@@ -39,7 +39,6 @@ function MakeTiles(props) {
             let newTracker = clickedTracker;
 
             newTracker[imgDict[shuffledTiles[i]]] = true;
-            console.log({ newTracker });
             setClickedTracker(newTracker);
             props.setScore(props.score + 1);
             if (props.score > props.highscore) {
