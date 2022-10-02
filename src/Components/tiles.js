@@ -5,6 +5,9 @@ import dancingRacoon from "../icons/dancingRacoon.jpeg";
 import appleRacoon from "../icons/eatingApple.jpeg";
 import loverRacoon from "../icons/lover.jpeg";
 import streetwearRacoon from "../icons/streetwear.jpeg";
+import cleaningRacoon from "../icons/cleaningRacoon.png";
+import moneyBagRacoon from "../icons/moneyBagRacoon.jpeg";
+import suitRacoon from "../icons/suitRacoon.jpeg";
 
 function MakeTiles(props) {
   const imgDict = {
@@ -14,6 +17,9 @@ function MakeTiles(props) {
     [appleRacoon]: 3,
     [loverRacoon]: 4,
     [streetwearRacoon]: 5,
+    [cleaningRacoon]: 6,
+    [moneyBagRacoon]: 7,
+    [suitRacoon]: 8,
   };
   // top possible score condition
 
