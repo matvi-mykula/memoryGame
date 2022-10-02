@@ -19,8 +19,8 @@
 
 img {
   padding: 5%;
-  height: 150px;
-  width: 150px;
+  height: 10vh;
+  width: 7vw;
 }
 img:hover {
   border: 1px solid black;
