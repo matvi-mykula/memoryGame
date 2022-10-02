@@ -14,7 +14,7 @@
   color: white;
 }
 .App-header > * {
-  padding: 50px;
+  padding: 5%;
 }
 
 img {
@@ -37,4 +37,14 @@ img:active {
 .images > * {
   margin: auto;
   flex: 1 0 21%;
+}
+
+.explanation {
+  /* margin-right: auto;
+  margin-left: auto;
+  width: fit-content;
+
+  text-align: center;
+  position: fixed;
+  bottom: 5vh; */
 }

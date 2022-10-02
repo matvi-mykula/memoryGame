@@ -26,6 +26,10 @@ function App() {
         highScore={highScore}
         setHighScore={setHighScore}
       ></MakeTiles>
+
+      <div className="explanation">
+        <p>Click the Racoons you have not clicked yet!</p>
+      </div>
     </div>
   );
 }
