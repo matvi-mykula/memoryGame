@@ -14,12 +14,12 @@ function MakeTiles(props) {
     [scienceRacoon]: 0,
     [cookieRacoon]: 1,
     [dancingRacoon]: 2,
-    // [appleRacoon]: 3,
-    // [loverRacoon]: 4,
-    // [streetwearRacoon]: 5,
-    // [cleaningRacoon]: 6,
-    // [moneyBagRacoon]: 7,
-    // [suitRacoon]: 8,
+    [appleRacoon]: 3,
+    [loverRacoon]: 4,
+    [streetwearRacoon]: 5,
+    [cleaningRacoon]: 6,
+    [moneyBagRacoon]: 7,
+    [suitRacoon]: 8,
   };
   // top possible score condition
 
@@ -59,7 +59,15 @@ function MakeTiles(props) {
     );
   }
   if (props.score === Object.keys(imgDict).length) {
-    return <p>That is the Top Possible Score! Congrats!</p>;
+    return (
+      <div>
+        <br />
+        <p>
+          {' '}
+          <em> That is the Top Possible Score! Congrats!</em>{' '}
+        </p>
+      </div>
+    );
   }
   return <div className="images">{tiles}</div>;
 }

@@ -1,6 +1,6 @@
-import "./App.css";
-import React, { useState } from "react";
-import { MakeTiles } from "./Components/tiles.js";
+import './App.css';
+import React, { useState } from 'react';
+import { MakeTiles } from './Components/tiles.js';
 
 function App() {
   const [score, setScore] = useState(0);
@@ -20,16 +20,15 @@ function App() {
           <p>HighScore: {highScore} </p>
         </div>
       </header>
+      <div className="explanation">
+        <p>Click the Racoons you have not clicked yet!</p>
+      </div>
       <MakeTiles
         score={score}
         setScore={setScore}
         highScore={highScore}
         setHighScore={setHighScore}
       ></MakeTiles>
-
-      <div className="explanation">
-        <p>Click the Racoons you have not clicked yet!</p>
-      </div>
     </div>
   );
 }
