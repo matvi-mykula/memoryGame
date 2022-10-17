@@ -1,25 +1,25 @@
-import React, { useState } from "react";
-import scienceRacoon from "../icons/scientist.jpeg";
-import cookieRacoon from "../icons/eatingCookie.jpeg";
-import dancingRacoon from "../icons/dancingRacoon.jpeg";
-import appleRacoon from "../icons/eatingApple.jpeg";
-import loverRacoon from "../icons/lover.jpeg";
-import streetwearRacoon from "../icons/streetwear.jpeg";
-import cleaningRacoon from "../icons/cleaningRacoon.png";
-import moneyBagRacoon from "../icons/moneyBagRacoon.jpeg";
-import suitRacoon from "../icons/suitRacoon.jpeg";
+import React, { useState } from 'react';
+import scienceRacoon from '../icons/scientist.jpeg';
+import cookieRacoon from '../icons/eatingCookie.jpeg';
+import dancingRacoon from '../icons/dancingRacoon.jpeg';
+import appleRacoon from '../icons/eatingApple.jpeg';
+import loverRacoon from '../icons/lover.jpeg';
+import streetwearRacoon from '../icons/streetwear.jpeg';
+import cleaningRacoon from '../icons/cleaningRacoon.png';
+import moneyBagRacoon from '../icons/moneyBagRacoon.jpeg';
+import suitRacoon from '../icons/suitRacoon.jpeg';
 
 function MakeTiles(props) {
   const imgDict = {
     [scienceRacoon]: 0,
     [cookieRacoon]: 1,
     [dancingRacoon]: 2,
-    [appleRacoon]: 3,
-    [loverRacoon]: 4,
-    [streetwearRacoon]: 5,
-    [cleaningRacoon]: 6,
-    [moneyBagRacoon]: 7,
-    [suitRacoon]: 8,
+    // [appleRacoon]: 3,
+    // [loverRacoon]: 4,
+    // [streetwearRacoon]: 5,
+    // [cleaningRacoon]: 6,
+    // [moneyBagRacoon]: 7,
+    // [suitRacoon]: 8,
   };
   // top possible score condition
 
@@ -58,7 +58,7 @@ function MakeTiles(props) {
       />
     );
   }
-  if (props.highscore === Object.keys(imgDict).length) {
+  if (props.score === Object.keys(imgDict).length) {
     return <p>That is the Top Possible Score! Congrats!</p>;
   }
   return <div className="images">{tiles}</div>;
